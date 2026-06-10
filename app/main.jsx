@@ -17,7 +17,6 @@ function App() {
       <TechStack />
       <UseCases />
       <CTA />
-      <Footer />
     </React.Fragment>
   );
 }
