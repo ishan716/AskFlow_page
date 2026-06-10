@@ -16,7 +16,7 @@ function Nav() {
       <header className="nav">
         <div className="container nav-inner">
           <a className="brand" href="#top" onClick={() => setOpen(false)}>
-            <span className="brand-mark"><img src="app/img/af-logo.svg" alt="AskFlow" style={{width: '24px', height: '24px'}} /></span>
+            <span className="brand-mark"><img src="app/img/AF.svg" alt="AskFlow" style={{width: '24px', height: '24px'}} /></span>
             AskFlow
           </a>
           <nav className="nav-links">
