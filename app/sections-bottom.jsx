@@ -77,7 +77,16 @@ function HowItWorks() {
 }
 
 function Requirements() {
+  const [expanded, setExpanded] = useState({});
   const totalFR = FUNCTIONAL.reduce((sum, g) => sum + g.items.length, 0);
+  
+  const toggleGroup = (i) => {
+    setExpanded(prev => ({
+      ...prev,
+      [i]: !prev[i]
+    }));
+  };
+  
   return (
     <section id="functional" className="req-zone">
       <div className="container">
@@ -104,22 +113,27 @@ function Requirements() {
         <div className="req-wrap">
           {FUNCTIONAL.map((g, i) => (
             <div className="req-group" key={i}>
-              <div className="req-head">
+              <div className="req-head" style={{ cursor: 'pointer' }} onClick={() => toggleGroup(i)}>
                 <span className="ic"><Icon name={g.icon} size={20} /></span>
                 <div>
                   <div className="tag">{g.tag}</div>
                   <h3>{g.title}</h3>
                 </div>
                 <span className="count-pill">{g.items.length} requirements</span>
+                <span style={{ marginLeft: 'auto', fontSize: '20px', transition: 'transform 0.3s' }}>
+                  {expanded[i] ? '−' : '+'}
+                </span>
               </div>
-              <div className="req-list">
-                {g.items.map(([id, html]) => (
-                  <div className="ritem" key={id}>
-                    <span className="rid">{id}</span>
-                    <span className="rtx" dangerouslySetInnerHTML={{ __html: html }} />
-                  </div>
-                ))}
-              </div>
+              {expanded[i] && (
+                <div className="req-list">
+                  {g.items.map(([id, html]) => (
+                    <div className="ritem" key={id}>
+                      <span className="rid">{id}</span>
+                      <span className="rtx" dangerouslySetInnerHTML={{ __html: html }} />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

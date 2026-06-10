@@ -24,7 +24,6 @@ function Nav() {
           </nav>
           <div className="nav-cta">
             <a className="btn btn-ghost" href="#contact">Talk to us</a>
-            <a className="btn btn-primary" href="#cta">Request demo</a>
             <button
               className="nav-toggle"
               aria-label="Toggle menu"
@@ -44,7 +43,6 @@ function Nav() {
           ))}
           <div className="mm-cta">
             <a className="btn btn-ghost" href="#contact" onClick={() => setOpen(false)}>Talk to us</a>
-            <a className="btn btn-primary" href="#cta" onClick={() => setOpen(false)}>Request a demo</a>
           </div>
         </div>
       </div>
