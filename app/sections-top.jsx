@@ -61,7 +61,6 @@ function Hero() {
             AskFlow is a real-time engagement platform for classrooms, seminars, conferences and events — live Q&amp;A, polls, quizzes, word clouds and now <b>location-based attendance</b>, all from a single room code.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#cta">Request a demo <Icon name="arrowRight" size={17} stroke={2.4} /></a>
             <a className="btn btn-ghost" href="#features">Explore features</a>
           </div>
           <div className="hero-meta">

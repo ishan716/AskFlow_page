@@ -14,9 +14,7 @@ function App() {
       <Location />
       <HowItWorks />
       <Requirements />
-      <TechStack />
       <UseCases />
-      <CTA />
     </React.Fragment>
   );
 }
