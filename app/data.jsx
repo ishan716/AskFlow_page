@@ -2,10 +2,8 @@
 
 const NAV_LINKS = [
   { href: "#features", label: "Features" },
-  { href: "#location", label: "Attendance" },
   { href: "#how", label: "How it works" },
   { href: "#functional", label: "Requirements" },
-  { href: "#stack", label: "Tech" },
 ];
 
 const STRIP = ["University Lectures", "Tech Meetups", "Workshops", "Conferences", "Community Events"];
