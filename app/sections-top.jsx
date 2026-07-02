@@ -23,7 +23,7 @@ function Nav() {
             {NAV_LINKS.map((l) => <a key={l.href} href={l.href}>{l.label}</a>)}
           </nav>
           <div className="nav-cta">
-            <a className="btn btn-ghost" href="#contact">Talk to us</a>
+
             <button
               className="nav-toggle"
               aria-label="Toggle menu"
