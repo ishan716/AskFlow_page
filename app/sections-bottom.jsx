@@ -220,7 +220,7 @@ function CTA() {
             <h2>Ready to make your next session interactive?</h2>
             <p>Bring AskFlow to your classroom, conference or event — engagement and attendance, handled in one place.</p>
             <div className="actions">
-              <a className="btn" href="#contact" style={{ background: "#fff", color: "var(--indigo-700)", borderColor: "#fff" }}>Request a demo</a>
+              <a className="btn" href="https://d3j08w04kzu58t.cloudfront.net/join" style={{ background: "#fff", color: "var(--indigo-700)", borderColor: "#fff" }}>Request a demo</a>
               <a className="btn btn-light" href="#features">See all features</a>
             </div>
           </div>
@@ -257,7 +257,7 @@ function Footer() {
           </div>
           <div className="foot-col">
             <h5>Get in touch</h5>
-            <a href="#cta">Request a demo</a>
+            <a href="https://d3j08w04kzu58t.cloudfront.net/join">Request a demo</a>
             <a href="mailto:hello@askflow.app">hello@askflow.app</a>
             <a href="#top">Back to top</a>
           </div>

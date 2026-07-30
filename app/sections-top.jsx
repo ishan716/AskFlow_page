@@ -23,7 +23,7 @@ function Nav() {
             {NAV_LINKS.map((l) => <a key={l.href} href={l.href}>{l.label}</a>)}
           </nav>
           <div className="nav-cta">
-            <a className="btn btn-ghost nav-demo" href="#cta">Request a demo</a>
+            <a className="btn btn-ghost nav-demo" href="https://d3j08w04kzu58t.cloudfront.net/join">Request a demo</a>
             <a className="btn btn-primary nav-start" href="#features">Explore AskFlow</a>
             <button
               className="nav-toggle"
