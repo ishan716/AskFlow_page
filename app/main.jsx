@@ -11,10 +11,12 @@ function App() {
       <Mission />
       <Features />
       <Showcase />
-     
+      <Location />
       <HowItWorks />
       <Requirements />
       <UseCases />
+      <CTA />
+      <Footer />
     </React.Fragment>
   );
 }

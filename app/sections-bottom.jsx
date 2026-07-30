@@ -7,7 +7,7 @@ function Location() {
         <div className="loc">
           <div className="loc-inner">
             <div>
-              <span className="badge-new">★ New Feature</span>
+              <span className="badge-new">New feature</span>
               <span className="eyebrow" style={{ display: "block", marginTop: 18 }}>Location-Based Attendance</span>
               <h2>Attendance that marks itself.</h2>
               <p>Join a room, share location once — if you're near the venue, you're marked <b style={{ color: "#fff" }}>present</b>. No roll call.</p>
@@ -36,11 +36,11 @@ function Location() {
                     </div>
                   </div>
                   <div className="phone-body">
-                    <div className="ttl">Engineering Lecture · Hall B</div>
-                    <div className="sub">Within 50 m of the venue</div>
+                    <div className="ttl">Attendance preview</div>
+                    <div className="sub">Within the host's venue radius</div>
                     <div className="checkin">
                       <span className="ck"><Icon name="check" size={16} stroke={2.6} /></span>
-                      <div className="ct"><b>You're marked present</b><span>Checked in at 10:02 AM</span></div>
+                      <div className="ct"><b>You're marked present</b><span>Check-in time is saved for the host</span></div>
                     </div>
                   </div>
                 </div>

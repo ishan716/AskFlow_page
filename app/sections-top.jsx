@@ -23,7 +23,8 @@ function Nav() {
             {NAV_LINKS.map((l) => <a key={l.href} href={l.href}>{l.label}</a>)}
           </nav>
           <div className="nav-cta">
-
+            <a className="btn btn-ghost nav-demo" href="#cta">Request a demo</a>
+            <a className="btn btn-primary nav-start" href="#features">Explore AskFlow</a>
             <button
               className="nav-toggle"
               aria-label="Toggle menu"
@@ -53,19 +54,25 @@ function Nav() {
 function Hero() {
   return (
     <section className="hero">
+      <div className="hero-note note-one" aria-hidden="true"></div>
+      <div className="hero-note note-two" aria-hidden="true"></div>
+      <div className="hero-note note-three" aria-hidden="true"></div>
+      <div className="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div className="hero-orbit orbit-two" aria-hidden="true"></div>
       <div className="container hero-grid">
         <div className="hero-copy">
-          <span className="eyebrow">Live Audience Interaction Platform</span>
-          <h1>Break the <span className="grad">one-way barrier</span>.</h1>
+          <span className="eyebrow">Live audience interaction</span>
+          <h1>Turn every room into a conversation.</h1>
           <p className="lead">
-            AskFlow is a real-time engagement platform for classrooms, seminars, conferences and events — live Q&amp;A, polls, quizzes, word clouds and now <b>location-based attendance</b>, all from a single room code.
+            Run live Q&amp;A, polls, quizzes, word clouds and location-based attendance from one simple workspace.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-ghost" href="#features">Explore features</a>
+            <a className="btn btn-primary" href="#features">Explore features</a>
+            <a className="btn btn-light" href="#how">See how it works</a>
           </div>
           <div className="hero-meta">
-            <div className="item"><span className="dot"></span> Real-time, zero page refresh</div>
-            <div className="item"><span className="dot" style={{ background: "var(--indigo-500)", boxShadow: "0 0 0 4px rgba(99,102,241,.16)" }}></span> Anonymous or named join</div>
+            <div className="item"><span className="dot"></span> No app or participant signup</div>
+            <div className="item"><span className="dot"></span> Join with a room code or QR</div>
           </div>
         </div>
         <div className="hero-visual">
@@ -86,19 +93,19 @@ function HeroMock() {
     <div className="mock">
       <div className="float-card float-1">
         <span className="ic" style={{ background: "var(--indigo-50)", color: "var(--indigo-600)" }}><Icon name="thumbsUp" size={18} stroke={2.2} /></span>
-        <div><div className="ft">Live votes</div><div className="fv">1,284</div></div>
+        <div><div className="ft">Live responses</div><div className="fv">Updates instantly</div></div>
       </div>
       <div className="float-card float-2">
         <span className="ic" style={{ background: "#f0fdf4", color: "#16a34a" }}><Icon name="check" size={18} stroke={2.2} /></span>
-        <div><div className="ft">Checked in</div><div className="fv">96 present</div></div>
+        <div><div className="ft">Attendance</div><div className="fv">Location verified</div></div>
       </div>
 
       <div className="mock-top">
-        <span className="mock-room">ROOM · <b>482 9137</b></span>
-        <span className="mock-live"><span className="dot"></span> 142 live</span>
+        <span className="mock-room">ASKFLOW <b>SESSION PREVIEW</b></span>
+        <span className="mock-live"><span className="dot"></span> Live mode</span>
       </div>
       <div className="mock-q">
-        <span className="label">Live Poll</span>
+        <span className="label">Sample poll</span>
         <h4>Which session should we run next?</h4>
         <div className="bars">
           {bars.map((b, i) => (
@@ -121,7 +128,7 @@ function Strip() {
   return (
     <div className="strip">
       <div className="container strip-inner">
-        <span className="lbl">Built for</span>
+        <span className="lbl">Built for every kind of room</span>
         {STRIP.map((s) => <span key={s}>{s}</span>)}
       </div>
     </div>
